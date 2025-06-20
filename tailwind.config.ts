@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,51 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Priest Station custom colors
+				'burnt-sienna': {
+					50: '#fdf6f0',
+					100: '#fbeade',
+					200: '#f5d1b8',
+					300: '#eeb088',
+					400: '#e48456',
+					500: '#dc6234',
+					600: '#ce4b29',
+					700: '#ab3923',
+					800: '#8b3024',
+					900: '#722a20',
+					950: '#3e1410',
+				},
+				'forest-green': {
+					50: '#f1f8f1',
+					100: '#dfeedf',
+					200: '#c1ddc3',
+					300: '#93c397',
+					400: '#5ea064',
+					500: '#3a8041',
+					600: '#2d6532',
+					700: '#25502a',
+					800: '#204025',
+					900: '#1c3521',
+					950: '#0d1c0f',
+				},
+				'gold': {
+					50: '#fdfbeb',
+					100: '#faf4c8',
+					200: '#f5e893',
+					300: '#f0d654',
+					400: '#ecc425',
+					500: '#dcaf15',
+					600: '#be890f',
+					700: '#975f10',
+					800: '#7d4b14',
+					900: '#6a3d16',
+					950: '#3e1f08',
 				}
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +129,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in-left': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(-30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-in-left': 'slide-in-left 0.8s ease-out'
 			}
 		}
 	},
